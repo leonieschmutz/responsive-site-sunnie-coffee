@@ -91,3 +91,26 @@ header {
 .header-img {
   width: 100%;
 }
+
+main {
+  color: #829e8a;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 68px;
+  font-family: Americana std;
+  font-weight: 400;
+  color: #829e8a;
+}
+
+article {
+  padding: 122px 0 0;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
