@@ -69,7 +69,7 @@ video {
 }
 
 h1 {
-  font-size: 130px;
+  font-size: 48px;
   font-family: Americana std;
   font-weight: 400;
   color: white;
@@ -77,9 +77,9 @@ h1 {
   bottom: 50px;
 }
 
-@media (min-width: 300px) and (max-width: 1200px) {
+@media (min-width: 1200px) {
   h1 {
-    font-size: 48px;
+    font-size: 130px;
   }
 }
 
@@ -117,21 +117,44 @@ article {
   padding: 122px 0 0;
 }
 
-.about-us-text {
+.about-us-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
+
+  h2 {
+    order: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us-content {
+    flex-direction: row;
+  }
 }
 
 .daily-menu {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-ul {
-  margin-bottom: 60px;
+.daily-menu-text {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (min-width: 1200px) {
+  .daily-menu-text {
+    flex-direction: column;
+  }
+}
+
+.daily-menu-text-drinks,
+.daily-menu-text-meals {
+  padding: 10px 10px 25px;
 }
 
 .menu-button {
@@ -139,8 +162,13 @@ ul {
   border: solid 1px #829e8a;
   border-radius: 25px;
   padding: 9px 62px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  margin-bottom: 60px;
 }
