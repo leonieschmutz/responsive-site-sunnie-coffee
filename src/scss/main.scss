@@ -68,6 +68,19 @@ video {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("../fonts/AcuminPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Acumin Pro;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 h1 {
   font-size: 48px;
   font-family: Americana std;
@@ -107,10 +120,16 @@ h2 {
 }
 
 h3 {
-  font-size: 44px;
+  font-size: 22px;
   font-family: Americana std;
   line-height: 44px;
   margin-bottom: 24px;
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 44px;
+  }
 }
 
 article {
