@@ -103,6 +103,14 @@ h2 {
   font-family: Americana std;
   font-weight: 400;
   color: #829e8a;
+  line-height: 66px;
+}
+
+h3 {
+  font-size: 44px;
+  font-family: Americana std;
+  line-height: 44px;
+  margin-bottom: 24px;
 }
 
 article {
@@ -113,4 +121,26 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.daily-menu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul {
+  margin-bottom: 60px;
+}
+
+.menu-button {
+  display: inline;
+  border: solid 1px #829e8a;
+  border-radius: 25px;
+  padding: 9px 62px;
+}
+
+a {
+  text-decoration: none;
 }
