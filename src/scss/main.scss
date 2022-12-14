@@ -112,11 +112,17 @@ main {
 }
 
 h2 {
-  font-size: 68px;
+  font-size: 34px;
   font-family: Americana std;
   font-weight: 400;
   color: #829e8a;
   line-height: 66px;
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 68px;
+  }
 }
 
 h3 {
@@ -182,4 +188,28 @@ a {
 ul {
   margin-bottom: 60px;
   list-style-type: none;
+}
+
+.opening-hours-content {
+  text-align: center;
+}
+
+.slider-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+
+dt {
+  padding-bottom: 10px;
+
+  h3 {
+    margin: 0;
+  }
+}
+
+dd {
+  padding-bottom: 30px;
 }
