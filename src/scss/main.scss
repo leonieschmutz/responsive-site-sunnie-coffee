@@ -136,16 +136,6 @@ article {
   padding: 122px 0 0;
 }
 
-.about-us-content {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-
-  h2 {
-    order: 1;
-  }
-}
-
 @media (min-width: 1200px) {
   .about-us-content {
     flex-direction: row;
@@ -156,6 +146,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .daily-menu-text {
@@ -190,4 +181,5 @@ a {
 
 ul {
   margin-bottom: 60px;
+  list-style-type: none;
 }
