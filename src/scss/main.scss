@@ -1,14 +1,14 @@
 @import "bootstrap/scss/bootstrap-grid";
-.row + .row {
-  margin-top: 16px;
-}
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
+// .row + .row {
+//   margin-top: 16px;
+// }
+// .row > .col,
+// .row > [class^="col-"] {
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+//   background-color: rgba(86, 61, 124, 0.15);
+//   border: 1px solid rgba(86, 61, 124, 0.2);
+// }
 
 /* ====================================
 // css variables
@@ -140,6 +140,7 @@ h2 {
   font-weight: 400;
   color: #829e8a;
   line-height: 66px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 1200px) {
@@ -163,6 +164,10 @@ h3 {
 
 article {
   margin: 122px 0 0;
+}
+
+.about-us-text {
+  margin: 10px;
 }
 
 @media (min-width: 1200px) {
@@ -194,6 +199,7 @@ article {
 .daily-menu-text-drinks,
 .daily-menu-text-meals {
   padding: 10px 10px 25px;
+  margin: 10px;
 }
 
 a {
@@ -204,8 +210,11 @@ a {
   display: inline-block;
   border: solid 1px #829e8a;
   border-radius: 25px;
-  padding: 9px 62px;
+  padding: 3px 36px;
   text-align: center;
+  font-family: Americana std;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 ul {
