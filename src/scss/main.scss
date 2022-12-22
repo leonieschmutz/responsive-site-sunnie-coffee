@@ -80,6 +80,10 @@ video {
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Acumin Pro;
   font-weight: 400;
@@ -89,6 +93,8 @@ body {
 header {
   background-color: #829e8a;
   padding: 67px 0;
+  position: relative;
+  z-index: 3;
 }
 
 .header-img {
@@ -99,6 +105,37 @@ main {
   color: #829e8a;
   font-size: 20px;
   line-height: 30px;
+}
+
+nav {
+  .nav-bar {
+    background-color: #829e8a;
+    top: 0;
+    color: white;
+    z-index: 2;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav-title {
+    color: white;
+    font-size: 48px;
+    font-family: Americana std;
+    font-weight: 400;
+  }
+
+  .navigation {
+    display: flex;
+    text-align: center;
+    padding: 30px 0 5px;
+    flex-direction: row;
+  }
+
+  .navigation a {
+    text-decoration: underline 1px;
+  }
 }
 
 footer {
@@ -163,7 +200,7 @@ h3 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline 1px;
 }
 
 p {
@@ -282,7 +319,7 @@ dd {
   display: inline-block;
   position: relative;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   font-family: Americana std;
   margin: 0 auto;
   display: block;
@@ -358,6 +395,7 @@ dd {
   align-items: center;
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 60px;
 }
 
 .contact-social {
@@ -365,4 +403,5 @@ dd {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  margin-bottom: 60px;
 }
