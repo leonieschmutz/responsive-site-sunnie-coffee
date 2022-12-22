@@ -102,12 +102,7 @@ main {
 }
 
 footer {
-  background-color: #829e8a;
   margin: 122px 0 0;
-
-  h2 {
-    color: white;
-  }
 
   .button {
     border: solid 1px white;
@@ -116,6 +111,15 @@ footer {
     font-family: Americana std;
     font-size: 16px;
     margin: 7px 7px;
+  }
+
+  p {
+    color: white;
+  }
+
+  .footer-content {
+    background-color: #829e8a;
+    padding: 30px 0 30px;
   }
 }
 
@@ -144,7 +148,7 @@ h2 {
   font-weight: 400;
   color: #829e8a;
   line-height: 66px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
@@ -160,53 +164,12 @@ h3 {
   margin-bottom: 24px;
 }
 
-@media (min-width: 768px) {
-  h3 {
-    font-size: 44px;
-  }
-}
-
-.about-us-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .about-us-content {
-    flex-direction: row;
-  }
-}
-
-.daily-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.daily-menu-text {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-@media (min-width: 768px) {
-  .daily-menu-text {
-    flex-direction: column;
-  }
-}
-
-.daily-menu-text-drinks,
-.daily-menu-text-meals {
-  padding: 10px 10px 25px;
-  margin: 10px;
-}
-
 a {
   text-decoration: none;
+}
+
+p {
+  color: #829e8a;
 }
 
 ul {
@@ -226,6 +189,97 @@ dd {
   padding-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+  h3 {
+    font-size: 44px;
+  }
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: #829e8a solid 1px;
+}
+
+.about-us-visual {
+  border-top: #829e8a solid 1px;
+  border-bottom: #829e8a solid 1px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .about-us-visual,
+  .about-us-text {
+    border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us-content {
+    flex-direction: row;
+    border-top: #829e8a solid 1px;
+    border-bottom: #829e8a solid 1px;
+  }
+}
+
+.daily-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .menu-content {
+    border-top: #829e8a solid 1px;
+    border-bottom: #829e8a solid 1px;
+  }
+}
+
+.menu-visual {
+  padding: 10px;
+  border-top: #829e8a solid 1px;
+  border-bottom: #829e8a solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .menu-visual {
+    border: none;
+    border-right: #829e8a solid 1px;
+  }
+}
+
+.daily-menu-text {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: #829e8a solid 1px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .daily-menu-text {
+    flex-direction: column;
+    border: none;
+    margin-bottom: 0;
+  }
+}
+
+.daily-menu-text-drinks,
+.daily-menu-text-meals {
+  padding: 10px 10px 25px;
+}
+
 .button {
   display: inline-block;
   border: solid 1px #829e8a;
@@ -239,7 +293,9 @@ dd {
 
 .opening-hours-content {
   text-align: center;
-  padding: 60px 0;
+  padding: 30px 0 0 0;
+  border-top: #829e8a solid 1px;
+  border-bottom: #829e8a solid 1px;
 }
 
 .slider-img {
@@ -248,6 +304,11 @@ dd {
   justify-content: space-around;
   flex-wrap: nowrap;
   box-sizing: border-box;
+  padding: 10px;
+}
+
+.img-sunny-coffee {
+  border-bottom: #829e8a solid 1px;
 }
 
 .slider-img {
@@ -262,13 +323,26 @@ dd {
   }
 }
 
+.footer-contact {
+  border-top: white solid 1px;
+  border-bottom: white solid 1px;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .footer-contact {
+    border: none;
+    border-right: white solid 1px;
+  }
+}
+
 .contact-adress {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 16px;
   line-height: 26px;
-  padding: 30px;
 }
 
 .contact-social {
@@ -276,12 +350,4 @@ dd {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  padding: 15px;
-  padding: 30px;
-}
-
-@media (min-width: 768px) {
-  .contact-visual {
-    order: 1;
-  }
 }
