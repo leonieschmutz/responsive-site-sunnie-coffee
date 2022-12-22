@@ -105,12 +105,7 @@ footer {
   margin: 122px 0 0;
 
   .button {
-    border: solid 1px white;
-    padding: 5px 60px;
     color: white;
-    font-family: Americana std;
-    font-size: 16px;
-    margin: 7px 7px;
   }
 
   p {
@@ -280,15 +275,41 @@ dd {
   padding: 10px 10px 25px;
 }
 
+// .button {
+//   display: inline-block;
+//   border: solid 1px #829e8a;
+//   border-radius: 25px;
+//   padding: 3px 36px;
+//   text-align: center;
+//   font-family: Americana std;
+//   font-weight: 700;
+//   font-size: 16px;
+// }
+
 .button {
   display: inline-block;
-  border: solid 1px #829e8a;
-  border-radius: 25px;
-  padding: 3px 36px;
-  text-align: center;
-  font-family: Americana std;
+  position: relative;
   font-weight: 700;
   font-size: 16px;
+  font-family: Americana std;
+}
+
+.button span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 1s;
+}
+
+.button:hover .button-path {
+  stroke-dashoffset: 0;
 }
 
 .opening-hours-content {
